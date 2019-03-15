@@ -1,0 +1,171 @@
+body, h1, div, section{
+    margin: 0;
+    padding: 0;
+}
+
+
+.white {
+    background-color:#ffffff;
+}
+
+.teal {
+    background-color: #63e6be;
+}
+
+.indigo {
+    background-color: #627bf8;
+}
+
+.coral {
+    background-color: #ff6346;
+}
+
+.yellow {
+    background-color: #ffd347;
+}
+
+.blue {
+    background-color:#1B33D6;
+}
+
+.gray{
+    background-color: #f4f5f7;
+}
+
+.gray-dark {
+    background-color:#c6cbd4;
+}
+
+.photo {
+    background-image: url('../img/placeholder.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#intro {
+    overflow: hidden;
+}
+
+.flower path {
+    transform-origin: center;
+    transform:  translate(-50%, -50%);
+    transform-box: fill-box;
+}
+
+.flower {
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+.bg-blue {
+
+    background-color: #4A5DE2;
+    color: #fff; 
+}
+
+.line{
+    width: 500px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    }
+
+
+.left-top-offset {
+    transform: translate(-10%, -10%);
+}
+
+.right-bottom-offset {
+    transform: translate(40%, 10%);
+}
+
+.title {
+    background-color: #1B33D6;
+}
+
+.deco-grid {
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.threebythree-grid {
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.timetable-grid {
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 1em;
+}
+
+
+
+.fill-rest {
+    flex-grow:1;
+}
+
+.row1{
+    grid-row: 1;
+}
+
+.row2{
+    grid-row: 2;
+}
+
+.row3{
+    grid-row:3;
+}
+
+.row4{
+    grid-row:4;
+}
+
+.col1{
+    grid-column: 1;
+}
+
+.col2{
+    grid-column: 2;
+}
+
+.col3{
+    grid-column:3;
+}
+
+.col4{
+    grid-column: 4;
+}
+
+
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .appear {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  .deco-grid div svg{
+      opacity: 0;
+  }
+
+  .top {
+      z-index: 1000;
+  }
