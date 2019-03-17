@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Quicksand:700');
-@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
 
 @font-face{
     font-family: 'VulfMono-LightItalic';
@@ -9,6 +7,11 @@
                 url('../font/Vulf_Mono-Light_Italic_web.ttf') format('truetype');
   }
 
+@font-face{
+    font-family: 'Gong-gan';
+    src: url('../font/GonganL.woff');
+}
+
 h1,
 h2,
 h3,
@@ -16,36 +19,49 @@ p {
     color: #14161a;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'VulfMono-LightItalic', sans-serif;
+
+h1 {
+    font-family: 'VulfMono-LightItalic','Gong-gan', sans-serif;
 }
 
-.italic {
-    font-family: 'Libre Baskerville', serif;
+h2{
+    font-family: 'VulfMono-LightItalic', 'Gong-gan',sans-serif; 
 }
 
-html, body p,ol {
+h3{
+    font-family: 'VulfMono-LightItalic', 'Gong-gan',sans-serif; 
+    font-size: 24px;
+}
+
+p {
     font-family: 'Nanum Gothic',sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height:2;
     font-size: 14px;
-    letter-spacing:0.1px
+    letter-spacing:0.1px;
+}
+
+.information {
+    font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
+    font-size: 14px;
 }
 
 .name {
     font-family: 'VulfMono-LightItalic', sans-serif;
     font-size: 14px;
-    letter-spacing: 0.50px;
+    letter-spacing: 0.5px;
 }
 
 .time {
     font-family: 'VulfMono-LightItalic', sans-serif;
-    font-size: 14px;
-    color:#fff;
+    font-size: 18px;
+    line-height: 0.95;
 }
 
+.content {
+    font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+}
 
 .top-left-20 {
     top: 20%;
@@ -56,3 +72,48 @@ html, body p,ol {
     bottom:20%;
     left:20%;
 }
+
+
+
+.content:before {
+    display: inline-block;
+    content: ' ';
+    background-image: url('../img/diamond.svg');
+    background-size: 12px 12px;
+    height: 12px;
+    width: 12px;
+    margin-right: 12px; 
+  }
+
+  .things-list {
+    list-style-type: none;
+    padding:0;
+  }
+
+
+  .things-list li {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    padding-bottom: 40px;
+    counter-increment: step-counter;
+    text-align: center;
+    word-break: keep-all;
+  }
+
+  .things-list li::before {
+    margin: auto;
+    content: counter(step-counter);
+    font-family: 'VulfMono-LightItalic';
+    display: block;
+    font-size: 12px;
+    background-image: url('../img/symbol/red.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    color:white;
+  }
