@@ -28,3 +28,28 @@ decos.forEach(deco => {
     autoplay:true
   })
 })
+
+
+
+anime({
+  targets: ".diamonds svg",
+  delay: (element, index) => index * 800,
+  duration: 1000,
+  scale: (element, index) => anime.random(0.2,0.5),
+  loop:true,
+  easing:'cubicBezier(.5, .05, .1, .3)',
+  direction:`alternate`,
+  autoplay:true
+})
+
+
+anime({
+  targets:'.blueflower svg',
+  scale: [0.6, 1.0],
+  rotate: '1turn',
+  delay: (element, index) => index * 1000,
+  duration: 1200,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutSine'
+})

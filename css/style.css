@@ -158,18 +158,33 @@ body, h1, div, section{
     }
   }
   
-  .appear {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-  }
-
   .deco-grid div svg{
       opacity: 0;
   }
 
   .top {
       z-index: 1000;
+  }
+
+  .diamonds path {
+    transform-origin: center;
+  }
+
+  #location, #date {
+      animation-delay: 1s;
+      animation: slidedownAppear 2s ease-in;
+  }
+
+
+  @keyframes slidedownAppear {
+      0% {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      100% {
+          opacity: 1;
+      }
   }
