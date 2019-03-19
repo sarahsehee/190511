@@ -42,7 +42,7 @@ body, h1, div, section{
 }
 
 .photo {
-    background-image: url('../img/placeholder2.png');
+    background-image: url('../img/placeholder.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
