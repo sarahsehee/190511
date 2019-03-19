@@ -45,7 +45,7 @@ anime({
 
 anime({
   targets:'.blueflower svg',
-  scale: [0.6, 1.0],
+  scale: [0.6, 0.8],
   rotate: '1turn',
   delay: (element, index) => index * 1000,
   duration: 1200,
