@@ -4,6 +4,7 @@ function random(min, max) {
 
 
 const decos = document.querySelectorAll('.deco-grid div svg')
+const blues = document.querySelectorAll('.deco-grid .rotate svg')
 
 
 decos.forEach(deco => {
@@ -28,6 +29,23 @@ decos.forEach(deco => {
     autoplay:true
   })
 })
+
+blues.forEach(blue => {
+  anime({
+    scale: [0.6, 0.8],
+    targets:blue,
+    delay: (deco, index)=> anime.random(3000,3500),
+    duration: 2500,
+    rotate: '1turn',
+    loop:true,
+    easing:'cubicBezier(.5, .05, .1, .3)',
+    direction:`alternate`,
+    autoplay:true
+  })
+})
+
+
+
 
 
 
