@@ -48,7 +48,8 @@ p {
 
 .name {
     font-family: 'VulfMono-LightItalic', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+    color:white;
     letter-spacing: 0.5px;
 }
 
@@ -74,7 +75,7 @@ p {
 }
 
 
-
+/*
 .content:before {
     display: inline-block;
     content: ' ';
@@ -84,44 +85,75 @@ p {
     width: 12px;
     margin-right: 12px; 
   }
+*/
 
-  .things-list {
-    list-style-type: none;
-    padding:0;
+.content:before {
+    display: inline-block;
+    content: ' ';
+    height: 4px;
+    width: 4px;
+    background-color:white;
+    border-radius: 50%;
+    margin-right: 12px; 
   }
 
 
-  .things-list li {
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 29px;
-    padding-bottom: 40px;
-    counter-increment: step-counter;
-    text-align: center;
-    word-break: keep-all;
-  }
+.things-list {
+list-style-type: none;
+padding:0;
+}
 
-  .things-list li::before {
-    margin: auto;
-    content: counter(step-counter);
-    font-family: 'VulfMono-LightItalic';
-    display: block;
-    font-size: 12px;
-    background-image: url('../img/symbol/red.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    height: 32px;
-    width: 32px;
-    color:white;
-  }
 
-  .photo-grid{
-      display: none;
-  }
+.things-list li {
+font-family: 'Nanum Gothic', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 29px;
+padding-bottom: 40px;
+counter-increment: step-counter;
+text-align: left;
+word-break: keep-all;
+
+}
+
+/*
+.things-list li::before {
+margin: auto;
+content: counter(step-counter);
+content: '';
+font-family: 'VulfMono-LightItalic';
+display: block;
+font-size: 12px;
+background-image: url('../img/symbol/red.svg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+text-align: center;
+height: 24px;
+width: 24px;
+color:white;
+}
+*/
+
+.photo-grid{
+    display: none;
+}
 
 section .scroll {
     overflow: scroll;
+}
+
+.button {
+    font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: 0px 1px #2E44E3;
+    text-decoration: none;
+    line-height: 10px;
+    padding:4px;
+}
+
+.button:hover {
+    background-color:#14161a;;
+    color:white;
 }
