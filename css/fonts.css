@@ -109,7 +109,6 @@ font-family: 'Nanum Gothic', sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 29px;
-padding-bottom: 40px;
 counter-increment: step-counter;
 text-align: left;
 word-break: keep-all;
@@ -137,10 +136,6 @@ color:white;
 
 .photo-grid{
     display: none;
-}
-
-section .scroll {
-    overflow: scroll;
 }
 
 .button {
