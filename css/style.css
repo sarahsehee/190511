@@ -9,7 +9,6 @@ section {
 }
 
 
-
 .red {
     background-color:#FF5630;
 }
@@ -68,6 +67,18 @@ section {
 
 .img2{
     background-image: url('../img/black_side.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.img3{
+    background-image: url('../img/color_front.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.img4{
+    background-image: url('../img/color_bouq.jpg');
     background-size: cover;
     background-position: top;
 }
