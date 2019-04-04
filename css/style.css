@@ -63,24 +63,28 @@ section {
     background-image: url('../img/black_front.jpg');
     background-size: cover;
     background-position: top;
+    box-shadow: inset 0 0 0 4px #000;
 }
 
 .img2{
     background-image: url('../img/black_side.jpg');
     background-size: cover;
     background-position: top;
+    box-shadow: inset 0 0 0 4px #000;
 }
 
 .img3{
-    background-image: url('../img/color_front.jpg');
+    background-image: url('../img/black_up.jpg');
     background-size: cover;
     background-position: top;
+    box-shadow: inset 0 0 0 4px #000;
 }
 
 .img4{
     background-image: url('../img/color_bouq.jpg');
     background-size: cover;
     background-position: top;
+    box-shadow: inset 0 0 0 4px #000;
 }
 
 #intro {
