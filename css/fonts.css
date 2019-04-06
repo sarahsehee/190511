@@ -78,6 +78,12 @@ p {
 }
 
 
+.dates{
+    font-family: 'VulfMono-LightItalic', 'Gong-gan',sans-serif; 
+    font-size: 18px;
+    color:#fff;
+}
+
 .name {
     font-family: 'VulfMono-LightItalic', 'Gong-gan', sans-serif;
     font-size: 18px;
@@ -101,10 +107,6 @@ p {
     font-size: 16px;
 }
 
-.content_en {
-    font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
-    font-size: 16px;
-}
 
 .top-left-20 {
     top: 20%;
@@ -156,24 +158,6 @@ text-align: left;
 word-break: keep-all;
 }
 
-/*
-.things-list li::before {
-margin: auto;
-content: counter(step-counter);
-content: '';
-font-family: 'VulfMono-LightItalic';
-display: block;
-font-size: 12px;
-background-image: url('../img/symbol/red.svg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-text-align: center;
-height: 24px;
-width: 24px;
-color:white;
-}
-*/
 
 .photo-grid{
     display: none;
@@ -192,4 +176,20 @@ color:white;
 .button:hover {
     background-color:#14161a;;
     color:white;
+}
+
+.button_black {
+    font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 1px #fff;
+    color: #000;
+    text-decoration: none;
+    line-height: 10px;
+    padding:4px;
+    margin-top: 16px;
+}
+
+.button_black:hover{
+    background-color:#ffffff;
+    color:#000;
 }

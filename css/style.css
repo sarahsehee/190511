@@ -1,4 +1,4 @@
-body, h1, div, section, p{
+body, h1,h2,h3 div, section, p{
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
@@ -7,7 +7,6 @@ body, h1, div, section, p{
 section {
     overflow: hidden;
 }
-
 
 .red {
     background-color:#FF5630;
@@ -29,20 +28,12 @@ section {
     background-color: #ff6346;
 }
 
-.yellow {
+.yellow-bg {
     background-color: #FDC83C;
 }
 
 .blue {
     background-color:#1B33D6;
-}
-
-.gray{
-    background-color: #f4f5f7;
-}
-
-.gray-dark {
-    background-color:#c6cbd4;
 }
 
 .cover {
