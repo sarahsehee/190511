@@ -4,6 +4,7 @@ function random(min, max) {
 
 
 const decos = document.querySelectorAll('.deco-grid div svg')
+const flowerdiamond = document.querySelectorAll('.deco-grid .scale svg')
 const blues = document.querySelectorAll('.deco-grid .rotate svg')
 
 
@@ -18,11 +19,14 @@ decos.forEach(deco => {
     opacity:1,
     autoplay:true
   })
+})
+
+flowerdiamond.forEach(item => {
   anime({
-    targets: deco,
-    delay: (deco, index)=> anime.random(1300,3000),
-    duration: (deco,index) => anime.random(2000,3000),
-    scale: (deco, index) => anime.random(0.7,1.2),
+    targets: item,
+    delay: (item, index)=> anime.random(1300,3000),
+    duration: (item,index) => anime.random(2000,3000),
+    scale: (item, index) => anime.random(0.7,1.2),
     loop:true,
     easing:`easeInOutSine`,
     direction:`alternate`,
@@ -30,11 +34,12 @@ decos.forEach(deco => {
   })
 })
 
+
 blues.forEach(blue => {
   anime({
     scale: [0.6, 0.8],
     targets:blue,
-    delay: (deco, index)=> anime.random(3000,3500),
+    delay: (blue, index)=> anime.random(3000,3500),
     duration: 2500,
     rotate: '1turn',
     loop:true,
@@ -43,10 +48,6 @@ blues.forEach(blue => {
     autoplay:true
   })
 })
-
-
-
-
 
 
 anime({
