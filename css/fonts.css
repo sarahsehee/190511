@@ -92,6 +92,11 @@ p {
     margin-top:1rem;
 }
 
+.aboutus {
+    font-family: 'Libre Baskerville', 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
 .time {
     font-family: 'VulfMono-LightItalic', sans-serif;
     font-size: 18px;
