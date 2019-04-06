@@ -67,13 +67,13 @@ p {
 
 .information {
     font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     word-break: keep-all;
 }
 
 .information_en {
     font-family: 'VulfMono-LightItalic', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom:1rem;
 }
 
@@ -81,8 +81,9 @@ p {
 .name {
     font-family: 'VulfMono-LightItalic', sans-serif;
     font-size: 18px;
-    color:white;
+    color:rgb(46, 46, 46);
     letter-spacing: 0.5px;
+    margin-top:1rem;
 }
 
 .time {
@@ -92,6 +93,11 @@ p {
 }
 
 .content {
+    font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+}
+
+.content_en {
     font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
     font-size: 16px;
 }
