@@ -217,7 +217,7 @@ section {
     transform-origin: center;
   }
 
-  #location, #date {
+  #location, #date, .title-kr {
       animation-delay: 1s;
       animation: slidedownAppear 2s ease-in;
   }

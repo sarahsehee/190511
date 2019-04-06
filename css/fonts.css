@@ -79,7 +79,7 @@ p {
 
 
 .name {
-    font-family: 'VulfMono-LightItalic', sans-serif;
+    font-family: 'VulfMono-LightItalic', 'Gong-gan', sans-serif;
     font-size: 18px;
     color:rgb(46, 46, 46);
     letter-spacing: 0.5px;
@@ -90,6 +90,10 @@ p {
     font-family: 'VulfMono-LightItalic', sans-serif;
     font-size: 18px;
     line-height: 0.95;
+}
+
+.line-height {
+    line-height: 1.2;
 }
 
 .content {
