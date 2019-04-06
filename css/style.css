@@ -46,7 +46,7 @@ section {
 }
 
 .cover {
-    background-image: url('../img/black_front.jpg');
+    background-image: url('../img/black_front.png');
     background-size:cover;
     background-position: top;
 }
@@ -60,28 +60,28 @@ section {
 }
 
 .img1{
-    background-image: url('../img/black_front.jpg');
+    background-image: url('../img/black_side.png');
     background-size: cover;
     background-position: top;
     box-shadow: inset 0 0 0 4px #fff;
 }
 
 .img2{
-    background-image: url('../img/black_side.jpg');
+    background-image: url('../img/black_up.png');
     background-size: cover;
     background-position: top;
     box-shadow: inset 0 0 0 4px #fff;
 }
 
 .img3{
-    background-image: url('../img/black_up.jpg');
+    background-image: url('../img/black_front.png');
     background-size: cover;
     background-position: top;
     box-shadow: inset 0 0 0 4px #fff;
 }
 
 .img4{
-    background-image: url('../img/color_bouq.jpg');
+    background-image: url('../img/black_front2.png');
     background-size: cover;
     background-position: top;
     box-shadow: inset 0 0 0 4px #fff;
