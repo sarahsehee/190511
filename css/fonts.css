@@ -105,7 +105,7 @@ p {
 
 .time {
     font-family: 'VulfMono-LightItalic', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 0.95;
 }
 
@@ -179,8 +179,9 @@ word-break: keep-all;
     font-size: 14px;
     background-color: white;
     box-shadow: 0px 1px #2E44E3;
+    color: #2E44E3;
     text-decoration: none;
-    line-height: 10px;
+    line-height: 4;
     padding:4px;
 }
 
@@ -202,9 +203,9 @@ word-break: keep-all;
 
 .button_black:hover{
     background-color:#ffffff;
-    color:#000;
+    color: #2E44E3;
 }
 
 .button:visited{
-    text-emphasis: none;
+    color: #2E44E3;
 }
