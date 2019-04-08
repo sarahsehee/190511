@@ -160,7 +160,7 @@ padding:0;
 
 
 .things-list li {
-font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Avenir Next', 'Avenir','Nanum Gothic', sans-serif;
 font-size: 15px;
 font-weight: 400;
 line-height: 29px;
@@ -169,13 +169,17 @@ text-align: left;
 word-break: keep-all;
 }
 
+things-list ol li ol li {
+    padding: 1.5rem 0;
+}
 
 .photo-grid{
     display: none;
 }
 
 .button {
-    font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
+    cursor: pointer;
+    font-family: 'VulfMono-LightItalic','Gong-gan', 'Nanum Gothic', sans-serif;
     font-size: 14px;
     background-color: white;
     box-shadow: 0px 1px #2E44E3;
@@ -191,7 +195,7 @@ word-break: keep-all;
 }
 
 .button_black {
-    font-family: 'Gong-gan', 'Nanum Gothic', sans-serif;
+    font-family: 'VulfMono-LightItalic','Gong-gan', 'Nanum Gothic', sans-serif;
     font-size: 14px;
     box-shadow: 0px 1px #fff;
     color: #000;
@@ -208,4 +212,16 @@ word-break: keep-all;
 
 .button:visited{
     color: #2E44E3;
+}
+
+.disabled {
+    background-color:#ffffff;
+    color:#8b8b8b;
+    box-shadow: 0px 1px #8b8b8b;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+    background-color:#ffffff;
+    color:#8b8b8b;
 }
