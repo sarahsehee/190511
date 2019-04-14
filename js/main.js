@@ -2,21 +2,31 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function fixHeights() {
-  Array.from(document.getElementsByClassName("vh-100")).forEach(element => {
-    element.style.height = window.innerHeight + "px";
-  });
+function fixFirstSectionHeight() {
+  if (window.innerWidth >= 960) {
+    return;
+  }
 
-  Array.from(document.getElementsByClassName("vh-50")).forEach(element => {
-    element.style.height = window.innerHeight / 2 + "px";
-  });
+  Array.from(document.querySelectorAll("#firstSection .vh-100")).forEach(
+    element => {
+      element.style.height = window.innerHeight + "px";
+    }
+  );
 
-  Array.from(document.getElementsByClassName("vh-25")).forEach(element => {
-    element.style.height = window.innerHeight / 4 + "px";
-  });
+  Array.from(document.querySelectorAll("#firstSection .vh-50")).forEach(
+    element => {
+      element.style.height = window.innerHeight / 2 + "px";
+    }
+  );
+
+  Array.from(document.querySelectorAll("#firstSection .vh-25")).forEach(
+    element => {
+      element.style.height = window.innerHeight / 4 + "px";
+    }
+  );
 }
 
-fixHeights();
+fixFirstSectionHeight();
 
 const decos = document.querySelectorAll(".deco-grid div svg");
 const flowerdiamond = document.querySelectorAll(".deco-grid .scale svg");
