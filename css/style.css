@@ -119,6 +119,18 @@ section {
   }
 }
 
+.img5 {
+  background-image: url("../img/color_front.png");
+  background-size: cover;
+  background-position: top;
+}
+
+@media screen and (min-width: 400px) {
+  .img5 {
+    background-image: url("../img/color_front-2x.png");
+  }
+}
+
 #intro {
   overflow: hidden;
 }
